@@ -62,8 +62,7 @@ class Reddening:
             
         c_reader = csv.reader(csvfile, dialect='excel')
 
-        #header_line = str(next(c_reader))
-        next(c_reader)
+        next(c_reader) # this is just stepping past the header row
 
         kRP    = next(c_reader)
         kBP    = next(c_reader)
